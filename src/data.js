@@ -34,14 +34,12 @@ export const profile = {
 export const projects = [
   {
     title: "Website One — Premier Agribusiness Academy",
-    description: "A website for a company that runs training for agribusiness companies. Built with React, CSS, and Vite.",
     did: "Built the full site in React and Vite, including the programmes and testimonials pages.",
     image: PAA,
     link: "https://premieragribusiness.vercel.app/",
   },
   {
     title: "Website Two — AFSH",
-    description: "A company website for Amo Farm Sieberer Hatchery Ltd. (AFSH). Built with React.",
     did: "Built the whole site as the company's in-house frontend developer.",
     image: "/images/project2.png",
     link: "https://amofarms-react.vercel.app/",

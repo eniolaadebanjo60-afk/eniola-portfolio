@@ -34,7 +34,6 @@ export default function Projects() {
 
               <div className="projects__panel">
                 <div className="projects__panel-inner">
-                  <p className="projects__desc">{p.description}</p>
                   {p.link ? (
                     <a
                       href={p.link}

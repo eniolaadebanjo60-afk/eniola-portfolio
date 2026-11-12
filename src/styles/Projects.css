@@ -123,13 +123,6 @@
   box-shadow: 0 24px 48px rgba(var(--ink-rgb), 0.14);
 }
 
-.projects__desc {
-  margin-bottom: 20px;
-  font-size: 17px;
-  line-height: 26px;
-  color: var(--muted);
-}
-
 .projects__btn {
   display: inline-flex;
   align-items: center;

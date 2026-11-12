@@ -8,10 +8,6 @@ export default function CTA() {
       <div className="container">
         <Reveal>
           <div className="cta__card">
-            <span className="cta__status">
-              <span className="cta__dot" />
-              Open to opportunities
-            </span>
 
             <p className="cta__text">
               I build sites and web apps for businesses that need them{" "}
