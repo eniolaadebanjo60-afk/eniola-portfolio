@@ -48,9 +48,10 @@ export const projects = [
 
 export const building = [
   {
-    title: "Exam App(In Progress)",
+    title: "Exam App (In Progress)",
     description: "An exam app I'm currently building with React and Vite.",
     status: "In progress",
     tags: ["React", "Vite"],
+    link: "https://satoru-exam-app.vercel.app/graduate",
   },
 ];

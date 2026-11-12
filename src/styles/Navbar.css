@@ -24,6 +24,7 @@
   font-weight: 600;
   letter-spacing: -0.3px;
   white-space: nowrap;
+  font-family: 'Bespoke Sans', sans-serif;
 }
 
 .navbar__links {
@@ -40,6 +41,7 @@
   border-bottom: 2px solid transparent;
   transition: color 0.25s, border-color 0.25s;
   text-transform: uppercase;
+  font-family: 'Bespoke Sans', sans-serif;
 }
 
 .navbar__links a:hover,
@@ -56,6 +58,7 @@
   font-size: 15px;
   font-weight: 500;
   transition: background 0.3s;
+  font-family: 'Bespoke Sans', sans-serif;
 }
 
 .navbar__cta:hover {
