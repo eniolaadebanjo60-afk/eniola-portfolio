@@ -25,7 +25,10 @@ export default function Projects() {
               </div>
 
               <div className="projects__head">
-                <h3 className="projects__title">{p.title}</h3>
+                <div>
+                  <h3 className="projects__title">{p.title}</h3>
+                  {p.did && <p className="projects__did">{p.did}</p>}
+                </div>
                 <span className="projects__chev" aria-hidden="true" />
               </div>
 

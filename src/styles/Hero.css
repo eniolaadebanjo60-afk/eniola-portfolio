@@ -63,7 +63,7 @@
 }
 
 .hero__hello {
-  color: #000;
+  color: var(--muted);
 }
 
 .hero__name {
@@ -115,7 +115,7 @@
 }
 
 .hero__line--soft {
-  color: var(--accent);
+  color: var(--ink);
 }
 
 .hero__line > .hero__hl {
@@ -154,7 +154,7 @@
   align-items: flex-start;
   gap: 32px;
   padding-top: 32px;
-  border-top: 1px solid #000;
+  border-top: 1px solid var(--line);
   animation: hero-fade 0.9s var(--ease) 0.9s both;
 }
 
@@ -162,7 +162,7 @@
   max-width: 480px;
   font-size: 20px;
   line-height: 30px;
-  color: var(--black);
+  color: var(--muted);
 }
 
 .hero__actions {

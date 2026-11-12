@@ -22,7 +22,7 @@
 .projects__card:focus-within {
   z-index: 20;
   transform: translateY(-6px);
-  border-color: var(--accent);
+  border-color: var(--ink);
   box-shadow: 0 24px 48px rgba(var(--ink-rgb), 0.12);
 }
 
@@ -52,7 +52,7 @@
   left: 16px;
   padding: 6px 14px;
   border-radius: 999px;
-  background: var(--gradient);
+  background: var(--ink);
   color: #fff;
   font-size: 14px;
   font-weight: 500;
@@ -70,6 +70,13 @@
   font-size: 26px;
   line-height: 32px;
   letter-spacing: -0.6px;
+}
+
+.projects__did {
+  margin-top: 8px;
+  font-size: 15px;
+  line-height: 22px;
+  color: var(--muted);
 }
 
 .projects__chev {

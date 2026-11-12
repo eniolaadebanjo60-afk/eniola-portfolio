@@ -14,9 +14,8 @@ export default function CTA() {
             </span>
 
             <p className="cta__text">
-              I'm currently looking to join a cross-functional team that values
-              improving people's lives through{" "}
-              <span className="accent">accessible design</span>.
+              I build sites and web apps for businesses that need them{" "}
+              <span className="accent">done properly</span>.
             </p>
 
             <div className="cta__actions">

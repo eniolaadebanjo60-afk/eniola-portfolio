@@ -34,7 +34,7 @@
 
 .about__stat:hover {
   transform: translateY(-4px);
-  border-color: var(--accent);
+  border-color: var(--warm);
 }
 
 .about__stat strong {
@@ -44,7 +44,6 @@
   font-size: 40px;
   line-height: 44px;
   letter-spacing: -1.5px;
-  color: var(--accent);
 }
 
 .about__stat span {
@@ -78,7 +77,6 @@
 .about__chips li:hover {
   transform: translateY(-2px);
   border-color: var(--accent);
-  color: var(--accent);
 }
 
 @media (max-width: 900px) {
@@ -89,7 +87,17 @@
 }
 
 @media (max-width: 600px) {
-  .about__bio { font-size: 20px; line-height: 32px; }
-  .about__stats { grid-template-columns: 1fr; }
-  .about__stat strong { font-size: 32px; line-height: 38px; }
+  .about__bio {
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  .about__stats {
+    grid-template-columns: 1fr;
+  }
+
+  .about__stat strong {
+    font-size: 32px;
+    line-height: 38px;
+  }
 }

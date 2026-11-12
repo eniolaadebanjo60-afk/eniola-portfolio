@@ -47,7 +47,9 @@
 }
 
 .cta__text .accent {
-  color: var(--accent-light);
+  color: #fff;
+  text-decoration-color: var(--accent-light);
+  text-decoration: none;
 }
 
 .cta__actions {

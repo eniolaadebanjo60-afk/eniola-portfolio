@@ -19,7 +19,7 @@ export default function Contact() {
     {
       name: "Gmail",
       detail: email,
-      href: `mailto:${email}`,
+      href: `mailto:${email}?subject=${encodeURIComponent("Project enquiry")}`,
       Icon: SiGmail,
       color: "#ea4335",
       external: false,
@@ -27,7 +27,7 @@ export default function Contact() {
     whatsapp && {
       name: "WhatsApp",
       detail: "Chat with me",
-      href: `https://wa.me/${whatsapp}`,
+      href: `https://wa.me/${whatsapp}?text=${encodeURIComponent("Hi, I saw your portfolio and I'd like to talk about a project.")}`,
       Icon: FaWhatsapp,
       color: "#25d366",
       external: true,

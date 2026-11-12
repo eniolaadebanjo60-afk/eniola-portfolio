@@ -7,7 +7,7 @@ export default function Building() {
     <section id="building" className="experience">
       <div className="container">
         <Reveal>
-          <h2 className="experience__title">Currently Building</h2>
+          <h2 className="experience__title">Currently building</h2>
         </Reveal>
 
         <div className="experience__list">
@@ -17,7 +17,9 @@ export default function Building() {
 
             return (
               <Reveal key={i} delay={i * 100}>
-                <article className="experience__card">
+                <article
+                  className={`experience__card${hasProgress || hasTasks ? "" : " experience__card--solo"}`}
+                >
                   <div className="experience__main">
                     <span className="experience__status">
                       <span className="experience__dot" />

@@ -552,7 +552,7 @@ function MediaBackground() {
             width: "100%",
             height: "100%",
             objectFit: "cover",
-            filter: "saturate(1.3) contrast(1.05)",
+            filter: "saturate(0.85)",
           }}
         />
       ) : (
@@ -564,14 +564,14 @@ function MediaBackground() {
             backgroundImage: `url(${IMAGE})`,
             backgroundSize: "cover",
             backgroundPosition: "center",
-            filter: "saturate(1.3) contrast(1.05)",
+            filter: "saturate(0.85)",
             animation: "bg-drift 30s ease-in-out infinite alternate",
           }}
         />
       )}
 
       <div
-        style={{ position: "absolute", inset: 0, background: "rgba(244, 246, 251, 0.6)" }}
+        style={{ position: "absolute", inset: 0, background: "rgba(var(--bg-rgb), 0.5)" }}
       />
     </div>
   );

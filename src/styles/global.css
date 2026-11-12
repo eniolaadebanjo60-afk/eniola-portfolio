@@ -1,11 +1,11 @@
 :root {
-  --bg: #f5f8ff;
-  --bg-rgb: 245, 248, 255;
+  --bg: #fafafa;
+  --bg-rgb: 250, 250, 250;
   --surface: #ffffff;
-  --ink: #0f1235;
-  --ink-rgb: 15, 18, 53;
-  --muted: #4a527e;
-  --line: #dbe3fb;
+  --ink: #0a0a0a;
+  --ink-rgb: 10, 10, 10;
+  --muted: #333333;
+  --line: rgba(10, 10, 10, 0.16);
   --accent: #2f5bff;
   --accent-rgb: 47, 91, 255;
   --accent-light: #7ee0ff;
@@ -79,12 +79,15 @@ section {
 .eyebrow {
   font-size: 16px;
   font-weight: 600;
-  color: var(--accent);
+  color: var(--ink);
   margin-bottom: 20px;
 }
 
 .accent {
-  color: var(--accent);
+  text-decoration: underline;
+  text-decoration-color: var(--accent);
+  text-decoration-thickness: 3px;
+  text-underline-offset: 6px;
 }
 
 .about__heading,
@@ -107,7 +110,6 @@ section {
 
 .experience__link:hover,
 .projects__link:hover {
-  color: var(--accent);
   border-color: var(--accent);
 }
 

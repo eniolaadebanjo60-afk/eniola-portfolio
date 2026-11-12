@@ -15,7 +15,7 @@
   margin-bottom: 56px;
   font-size: 22px;
   line-height: 32px;
-  color: var(--black);
+  color: var(--muted);
 }
 
 .contact__links {
@@ -37,8 +37,8 @@
 
 .contact__card:hover {
   transform: translateY(-4px);
-  border-color: var(--brand);
-  box-shadow: 0 12px 28px rgba(14, 26, 43, 0.1);
+  border-color: var(--ink);
+  box-shadow: 0 12px 28px rgba(var(--ink-rgb), 0.1);
 }
 
 .contact__icon {
@@ -49,8 +49,8 @@
   width: 56px;
   height: 56px;
   border-radius: 16px;
-  background: color-mix(in srgb, var(--brand) 12%, #ffffff);
-  color: var(--brand);
+  background: rgba(var(--ink-rgb), 0.06);
+  color: var(--ink);
   transition: background 0.3s, color 0.3s;
 }
 
@@ -60,7 +60,7 @@
 }
 
 .contact__card:hover .contact__icon {
-  background: var(--brand);
+  background: var(--ink);
   color: #ffffff;
 }
 
