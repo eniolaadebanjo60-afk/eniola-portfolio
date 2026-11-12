@@ -30,7 +30,7 @@ export default function Navbar() {
     <header className="navbar">
       <nav className="container navbar__inner">
         <a href="#" className="navbar__logo" onClick={() => setOpen(false)}>
-          {profile.name}
+          OEI
         </a>
 
         <ul className={`navbar__links ${open ? "navbar__links--open" : ""}`}>

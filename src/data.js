@@ -1,5 +1,5 @@
 import PAA from "./assets/PAA.png";
-
+import AFSH from "./assets/AFSH.png"
 export const profile = {
   name: "Oluwagbemi Eniola Isaac",
   role: "Frontend Developer",
@@ -41,14 +41,14 @@ export const projects = [
   {
     title: "Website Two — AFSH",
     did: "Built the whole site as the company's in-house frontend developer.",
-    image: "/images/project2.png",
+    image: AFSH,
     link: "https://amofarms-react.vercel.app/",
   },
 ];
 
 export const building = [
   {
-    title: "Exam App — In Progress",
+    title: "Exam App(In Progress)",
     description: "An exam app I'm currently building with React and Vite.",
     status: "In progress",
     tags: ["React", "Vite"],

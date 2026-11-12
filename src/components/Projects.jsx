@@ -9,10 +9,11 @@ export default function Projects() {
         <Reveal>
           <h2 className="projects__heading">My projects</h2>
         </Reveal>
+
         <div className="projects__list">
-          {projects.map((p, i) => (
-            <article key={i} className="projects__card" tabIndex={0}>
-              <div className="projects__img-wrap">
+          {projects.map((p, i) => {
+            const image = (
+              <>
                 <img
                   src={p.image}
                   alt={p.title}
@@ -22,18 +23,30 @@ export default function Projects() {
                 {p.status && (
                   <span className="projects__badge">{p.status}</span>
                 )}
-              </div>
+              </>
+            );
 
-              <div className="projects__head">
-                <div>
+            return (
+              <article key={i} className="projects__card">
+                {p.link ? (
+                  <a
+                    href={p.link}
+                    className="projects__img-wrap"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    tabIndex={-1}
+                    aria-hidden="true"
+                  >
+                    {image}
+                  </a>
+                ) : (
+                  <div className="projects__img-wrap">{image}</div>
+                )}
+
+                <div className="projects__body">
                   <h3 className="projects__title">{p.title}</h3>
                   {p.did && <p className="projects__did">{p.did}</p>}
-                </div>
-                <span className="projects__chev" aria-hidden="true" />
-              </div>
 
-              <div className="projects__panel">
-                <div className="projects__panel-inner">
                   {p.link ? (
                     <a
                       href={p.link}
@@ -64,9 +77,9 @@ export default function Projects() {
                     </span>
                   )}
                 </div>
-              </div>
-            </article>
-          ))}
+              </article>
+            );
+          })}
         </div>
       </div>
     </section>
